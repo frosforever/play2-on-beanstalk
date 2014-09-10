@@ -3,6 +3,18 @@ Play deployed on Beanstalk via docker
 
 Develop locally as normal. Use ```./activator run``` and so on.
 
+# Freestyle build step on DEV@cloud Jenkins
+
+```
+rm -rf Beanstalk.zip
+./activator docker:stage
+cd target/docker
+zip -r ../../Beanstalk.zip . 
+```
+
+Then use AWS deployer to select Beanstalk.zip
+
+
 # To distribute as docker on beanstalk
 
 ```
