@@ -11,7 +11,7 @@ scalaVersion := "2.11.1"
 
 maintainer in Docker := "John Smith <john.smith@example.com>"
 
-dockerExposedPorts in Docker := Seq(9000, 9443)
+dockerExposedPorts in Docker := Seq(9000)
 
 libraryDependencies ++= Seq(
   javaJdbc,
