@@ -1,4 +1,4 @@
-Play deployed on Beanstalk via docker
+Play2 deployed on Beanstalk via docker
 =================================
 
 Develop locally as normal. Use ```./activator run``` and so on.
@@ -15,7 +15,7 @@ zip -r ../../Beanstalk.zip .
 Then use AWS deployer to select Beanstalk.zip
 
 
-# To distribute as docker on beanstalk
+# Manual deployment via beanstalk
 
 ```
 ./activator docker:stage
